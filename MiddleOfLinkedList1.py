@@ -15,7 +15,7 @@ class Solution:
             return -1
         temp1 = head
         temp2 = head
-        while temp2.next!=None and temp2.next.next != None:
+        while temp2 !=None and temp2.next != None:
             temp1=temp1.next
             temp2=temp2.next.next
     
