@@ -14,10 +14,10 @@ def delNode(head, k):
 
     if k==1:
         return a.next
-    c=1
-    while a and a.next:
-        c=c+1
-        if c==k:
+    count = 1
+    while a != None and a.next != None:
+        count =count + 1
+        if count==k:
             a.next=a.next.next
         a=a.next
     return head
